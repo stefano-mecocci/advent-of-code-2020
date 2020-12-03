@@ -48,4 +48,4 @@ main = do
   content <- readFile "input.txt"
   let contentLines = lines content
   let validPasswords = map partTwo contentLines
-  print (foldl (\acc x -> if x then acc + 1 else acc) 0 validPasswords)
+  print (length $ filter id validPasswords)
