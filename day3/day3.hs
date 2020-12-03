@@ -27,6 +27,6 @@ partTwo x = product $ map (trees x) [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
 
 main :: IO ()
 main = do
-  content <- readFile "test.txt"
+  content <- readFile "input.txt"
   let contentLines = lines content
-  print $ partOne contentLines
+  print $ partTwo contentLines
